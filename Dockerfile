@@ -12,5 +12,3 @@ WORKDIR /opt/empaq
 # Linux 10fe91f9bb07 4.9.44-linuxkit-aufs #1 SMP Fri Aug 25 10:00:41 UTC 2017 x86_64 GNU/Linux
 # So all the builds will be x64 bits
 RUN touch index.js && pkg --targets freebsd,linux,macos,win index.js && rm *
-
-USER circleci
